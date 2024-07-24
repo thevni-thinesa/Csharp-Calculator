@@ -89,6 +89,7 @@
             OneBtn.TabIndex = 1;
             OneBtn.Text = "1";
             OneBtn.UseVisualStyleBackColor = true;
+            OneBtn.Click += OneBtn_Click;
             // 
             // ZeroBtn
             // 
@@ -99,6 +100,7 @@
             ZeroBtn.TabIndex = 1;
             ZeroBtn.Text = "0";
             ZeroBtn.UseVisualStyleBackColor = true;
+            ZeroBtn.Click += ZeroBtn_Click;
             // 
             // EightBtn
             // 
@@ -139,6 +141,7 @@
             DotBtn.TabIndex = 1;
             DotBtn.Text = ".";
             DotBtn.UseVisualStyleBackColor = true;
+            DotBtn.Click += DotBtn_Click;
             // 
             // NineBtn
             // 
