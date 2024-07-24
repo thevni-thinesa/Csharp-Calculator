@@ -222,14 +222,12 @@ namespace Calculator
         }
 
 
-
-
-
-
-
-
-
-
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            valueFirst = 0.0m;
+            valueSecond = 0.0m;
+            TxtBox.Text = "0";
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -202,6 +202,7 @@
             ClearBtn.TabIndex = 1;
             ClearBtn.Text = "Clear";
             ClearBtn.UseVisualStyleBackColor = true;
+            ClearBtn.Click += ClearBtn_Click;
             // 
             // MinusBtn
             // 
@@ -273,6 +274,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.how_to_become_software_engineer;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(525, 517);
             Controls.Add(ModBtn);
@@ -298,7 +300,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
-            Text = "Calculator";
+            Text = "Calculator App";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
