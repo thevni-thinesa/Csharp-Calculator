@@ -55,6 +55,7 @@
             TxtBox.Font = new Font("Segoe UI", 20F);
             TxtBox.Location = new Point(12, 28);
             TxtBox.Name = "TxtBox";
+            TxtBox.ReadOnly = true;
             TxtBox.Size = new Size(487, 61);
             TxtBox.TabIndex = 0;
             TxtBox.Text = "0";
@@ -211,6 +212,7 @@
             MinusBtn.TabIndex = 1;
             MinusBtn.Text = "-";
             MinusBtn.UseVisualStyleBackColor = true;
+            MinusBtn.Click += MinusBtn_Click;
             // 
             // DivBtn
             // 
@@ -221,6 +223,7 @@
             DivBtn.TabIndex = 1;
             DivBtn.Text = "/";
             DivBtn.UseVisualStyleBackColor = true;
+            DivBtn.Click += DivBtn_Click;
             // 
             // MinusPlusBtn
             // 
@@ -231,6 +234,7 @@
             MinusPlusBtn.TabIndex = 1;
             MinusPlusBtn.Text = "-/+";
             MinusPlusBtn.UseVisualStyleBackColor = true;
+            MinusPlusBtn.Click += MinusPlusBtn_Click;
             // 
             // PlusBtn
             // 
@@ -241,6 +245,7 @@
             PlusBtn.TabIndex = 1;
             PlusBtn.Text = "+";
             PlusBtn.UseVisualStyleBackColor = true;
+            PlusBtn.Click += PlusBtn_Click;
             // 
             // MulBtn
             // 
@@ -251,6 +256,7 @@
             MulBtn.TabIndex = 1;
             MulBtn.Text = "x";
             MulBtn.UseVisualStyleBackColor = true;
+            MulBtn.Click += MulBtn_Click;
             // 
             // ModBtn
             // 
@@ -261,12 +267,12 @@
             ModBtn.TabIndex = 1;
             ModBtn.Text = "%";
             ModBtn.UseVisualStyleBackColor = true;
+            ModBtn.Click += ModBtn_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.how_to_become_software_engineer;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(525, 517);
             Controls.Add(ModBtn);
@@ -289,6 +295,8 @@
             Controls.Add(FourBtn);
             Controls.Add(SevenBtn);
             Controls.Add(TxtBox);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "Calculator";
             Load += Form1_Load;
